@@ -1,11 +1,12 @@
 import React from "react"
+import Card from "./components/molecules/Card"
+import "typeface-roboto"
+import "./assets/styles/app.scss"
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <p>Привет, Андрей!</p>
-      </div>
+      <Card/>
     </div>
   );
 }

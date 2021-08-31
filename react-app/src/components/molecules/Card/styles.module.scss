@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    min-width: 30%;
+    width: 379px;
+    height: 124px;
+    box-shadow: 0px 4px 8px rgba(0, 0 , 0, 0.1);
+    border-radius: 4px;
+}
+.image{
+    width: 124px;
+    height: 124px;
+    margin: 0 25px;
+}
+
+.personStatus{
+    display: block;
+    background-color: rgba(48, 255, 30, 0.2);
+    color: #51E245;
+    text-align: center;
+    padding: 8px 12px;
+    margin:16px 0 12px 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+.personName{
+    font-size: 16px;
+    line-height: 24px;
+}
+.personBirth{
+    opacity: 0.4;
+    font-size: 12px;
+    line-height: 24px;
+}
