@@ -1,12 +1,17 @@
-import React from "react"
-import Card from "./components/molecules/Card"
-import "typeface-roboto"
-import "./assets/styles/app.scss"
+import React from "react";
+import Card from "./components/molecules/Card";
+import "./assets/styles/app.scss";
 
 function App() {
   return (
     <div className="App">
-      <Card/>
+      <div className="card-block">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }
