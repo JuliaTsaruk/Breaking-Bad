@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./reset.scss";
+@import "./mixins.scss";
 
 @font-face {
   font-family: "Roboto";
@@ -17,8 +18,6 @@ body {
 }
 .card-block{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 32px;
-}
-    
+  grid-gap: 2rem;
+}  
