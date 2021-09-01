@@ -15,16 +15,16 @@
   }
   .info {
     margin-left: 1.5rem;
-  }
-  .status {
-    @include greenBlock;
-    margin: 1rem 0 0.75rem 0;
-  }
-  .name {
-    @include largeText;
-  }
-  .birth {
-    opacity: 0.4;
-    @include smallText;
+    .status {
+      @include greenBlock;
+      margin: 1rem 0 0.75rem 0;
+    }
+    .name {
+      @include largeText;
+    }
+    .birth {
+      opacity: 0.4;
+      @include smallText;
+    }
   }
 }
