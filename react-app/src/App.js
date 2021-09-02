@@ -1,19 +1,13 @@
 import React from "react";
-import Card from "./components/molecules/Card";
+import CardList from "./components/organisms/CardList";
 import "./assets/styles/app.scss";
 
 function App() {
   return (
     <div className="App">
-      <div className="card-block">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <CardList/>
     </div>
   );
-}
+};
 
 export default App;

@@ -3,6 +3,7 @@
 .card {
   display: flex;
   overflow: hidden;
+  height: 7.75rem;
   @include cardShadow;
   .image {
     flex: 0 0 7.75rem;
