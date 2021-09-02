@@ -44,7 +44,13 @@ function CardList() {
   return (
     <div className={style.cardList}>
       {cards.map((card) => (
-        <Card card={card} key={card.id} />
+        <Card
+          img={card.img}
+          name={card.name}
+          birthday={card.birthday}
+          status={card.status}
+          key={card.id}
+        />
       ))}
     </div>
   );
