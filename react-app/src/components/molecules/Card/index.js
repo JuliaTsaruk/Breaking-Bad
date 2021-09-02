@@ -1,17 +1,16 @@
 import React from "react";
 import style from "./styles.module.scss";
-import cardImg from "../../../assets/images/card-img.png";
 
-const Card = function () {
+const Card = function (props) {
   return (
     <div className={style.card}>
       <div className={style.image}>
-        <img src={cardImg} alt="card-img" />
+        <img src={props.card.img} alt="card-img" />
       </div>
       <div className={style.info}>
-        <p className={style.status}>живой</p>
-        <p className={style.name}>Андрей Панасюк</p>
-        <p className={style.birth}>23.11.2001</p>
+        <p className={style.status}>{props.card.status}</p>
+        <p className={style.name}>{props.card.name}</p>
+        <p className={style.birth}>{props.card.birthday}</p>
       </div>
     </div>
   );
