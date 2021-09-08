@@ -15,4 +15,5 @@ const Card = ({ img, status, name, birthday }) => {
     </div>
   );
 };
+
 export default Card;

@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from "uuid";
-import TEST from "../actionTypes/test";
 
 const initialState = {
   cards: [
@@ -39,19 +38,10 @@ const initialState = {
       status: "Deceased",
     },
   ],
-  test: false,
 };
 
-const cardListReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case TEST: {
-      return {
-        ...state,
-        test: true,
-      };
-    }
-    default:
-      return state;
-  }
+const cardListReducer = (state = initialState) => {
+  return state;
 };
+
 export default cardListReducer;
