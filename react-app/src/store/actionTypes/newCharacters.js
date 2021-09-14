@@ -1,0 +1,3 @@
+export const NEW_CHARACTERS = "NEW_CHARACTERS";
+export const DATA_IS_FETCHING = "DATA_IS_FETCHING";
+export const DATA_ERROR = "DATA_ERROR";
