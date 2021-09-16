@@ -1,33 +1,31 @@
 import {
-  DATA_ERROR,
-  DATA_IS_FETCHING,
-  NEW_CHARACTERS,
+  ERROR_GETTING_CHARACTERS,
+  CHANGE_CHARACTERS_LOADER_VALUE,
+  SET_CHARACTERS,
 } from "../actionTypes/newCharacters";
 
 const initialState = {
-  cards: [],
-  isFetching: true,
-  errorMessage: false,
+  characters: [],
+  isFetching: false,
+  isError: false,
 };
 
 const cardListReducer = (state = initialState, action) => {
   switch (action.type) {
-    case NEW_CHARACTERS:
+    case SET_CHARACTERS:
       return {
         ...state,
-        cards: action.payload,
-        isFetching: false,
-        errorMessage: false,
+        characters: action.payload,
       };
-    case DATA_IS_FETCHING:
+    case CHANGE_CHARACTERS_LOADER_VALUE:
       return {
         ...state,
         isFetching: action.payload,
       };
-    case DATA_ERROR:
+    case ERROR_GETTING_CHARACTERS:
       return {
         ...state,
-        errorMessage: action.payload,
+        isError: action.payload,
       };
     default:
       return state;
